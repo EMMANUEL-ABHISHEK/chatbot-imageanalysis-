@@ -1,0 +1,127 @@
+# ============================================================================
+# CONVERSATIONAL RECOGNITION CHATBOT - REQUIREMENTS
+# ============================================================================
+# This file contains all dependencies for the multi-modal chatbot with RAG
+# Each package is documented with its purpose and usage in the project
+# ============================================================================
+
+# ============================================================================
+# CORE WEB FRAMEWORK & API
+# ============================================================================
+fastapi==0.103.1              # Main web framework for REST API endpoints
+uvicorn==0.23.2               # ASGI server for running FastAPI application
+starlette==0.27.0             # Core ASGI framework (FastAPI dependency)
+pydantic==2.3.0               # Data validation and serialization for API models
+pydantic_core==2.6.3          # Core validation library for Pydantic
+python-multipart==0.0.6       # File upload support for FastAPI endpoints
+
+# ============================================================================
+# HTTP & NETWORKING
+# ============================================================================
+httpx==0.28.1                 # Modern HTTP client for external API calls
+httpcore==1.0.9               # HTTP core library (httpx dependency)
+requests==2.32.3              # HTTP library for RSS feed fetching and API calls
+urllib3==2.4.0                # HTTP client library (requests dependency)
+certifi==2025.4.26            # SSL certificate bundle for secure connections
+h11==0.16.0                   # HTTP/1.1 protocol implementation
+
+# ============================================================================
+# MACHINE LEARNING & AI
+# ============================================================================
+torch==2.6.0                  # PyTorch deep learning framework for model inference
+torchvision==0.21.0           # Computer vision models and transforms for PyTorch
+transformers==4.33.3          # Hugging Face transformers for NLP models
+sentence-transformers==2.2.2  # Sentence embeddings for semantic search
+huggingface-hub==0.19.4       # Hugging Face model hub integration
+tokenizers==0.13.3            # Fast tokenizers for text processing
+safetensors==0.5.3            # Safe tensor serialization format
+accelerate==0.21.0            # Model acceleration and optimization
+timm==1.0.12                  # PyTorch Image Models for Vision Transformer support
+
+# ============================================================================
+# VECTOR DATABASE & RAG
+# ============================================================================
+pinecone==5.0.0        # Vector database for semantic search and RAG
+groq==0.4.1                   # Groq API client for LLM inference
+
+# ============================================================================
+# RSS & NEWS PROCESSING
+# ============================================================================
+feedparser==6.0.10           # RSS/Atom feed parsing for news ingestion
+
+# ============================================================================
+# DOCUMENT PROCESSING
+# ============================================================================
+PyPDF2==3.0.1               # PDF text extraction and processing (used in RAG service)
+
+# ============================================================================
+# AUDIO PROCESSING
+# ============================================================================
+SpeechRecognition==3.10.0    # Speech-to-text conversion
+pydub==0.25.1                # Audio file format conversion and processing
+
+# ============================================================================
+# IMAGE PROCESSING
+# ============================================================================
+pillow==11.2.1               # Image processing and manipulation
+
+# ============================================================================
+# SCIENTIFIC COMPUTING
+# ============================================================================
+numpy==2.2.6                 # Numerical computing for arrays and matrices
+scipy==1.15.3                # Scientific computing and optimization
+scikit-learn==1.6.1          # Machine learning algorithms and utilities
+
+# ============================================================================
+# NATURAL LANGUAGE PROCESSING
+# ============================================================================
+regex==2024.11.6             # Advanced regular expressions for text processing
+
+# ============================================================================
+# CONFIGURATION & ENVIRONMENT
+# ============================================================================
+python-dotenv==1.0.0         # Environment variable management from .env files
+
+# ============================================================================
+# UTILITIES & HELPERS
+# ============================================================================
+python-dateutil==2.9.0.post0 # Date/time parsing and manipulation
+tqdm==4.67.1                  # Progress bars for long-running operations
+joblib==1.5.0                # Parallel processing and caching
+packaging==25.0               # Package version parsing and comparison
+filelock==3.18.0             # File locking for concurrent access
+fsspec==2025.3.2             # File system abstraction layer
+
+# ============================================================================
+# SYSTEM & PLATFORM
+# ============================================================================
+win32_setctime==1.2.0        # Windows file time setting (Windows only)
+colorama==0.4.6              # Cross-platform colored terminal output
+
+# ============================================================================
+# ASYNC & CONCURRENCY
+# ============================================================================
+anyio==3.7.1                 # Async I/O abstraction layer
+sniffio==1.3.1               # Async library detection
+
+# ============================================================================
+# DATA FORMATS & SERIALIZATION
+# ============================================================================
+PyYAML==6.0.2                # YAML file parsing and generation (dependency)
+
+# ============================================================================
+# CORE PYTHON DEPENDENCIES
+# ============================================================================
+typing_extensions==4.13.2    # Extended type hints for older Python versions
+annotated-types==0.7.0       # Type annotation utilities
+six==1.17.0                  # Python 2/3 compatibility utilities
+click==8.2.0                 # Command-line interface creation
+charset-normalizer==3.4.2    # Character encoding detection
+idna==3.10                   # Internationalized domain names
+MarkupSafe==3.0.2            # Safe string handling for templates
+Jinja2==3.1.6                # Template engine (dependency)
+threadpoolctl==3.6.0         # Thread pool control for numerical libraries
+distro==1.9.0                # Linux distribution detection (dependency)
+dnspython==2.7.0             # DNS toolkit (dependency)
+
+
